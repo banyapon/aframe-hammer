@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aframe Hammer.js</title>
+  <script src="js/hammer.js"></script>
+  <script src="js/aframe.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/control.js"></script>
+</head>
+
+<body>
+  <div>
+    <div id="info-area" class="info-area">
+      <div class="content-area">
+        <h2 id="th_title"></h2>
+        <div id="myElement"></div>
+      </div>
+    </div>
+    <div class="controls-area"></div>
+  </div>
+  
+  <a-scene>
+    <a-box id="box" position="0 0 -3" rotation="0 0 0" color="#ECECEC" rotate-box></a-box>
+    <a-sky color="#ECECEC"></a-sky>
+
+    <a-entity camera mouse-cursor>
+      <a-cursor fuse="true" color="black"></a-cursor>
+    </a-entity>
+  </a-scene>
+
+  
+</body>
+
+</html>
